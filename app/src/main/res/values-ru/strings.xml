@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">Сосредоточься. Блокируй. Достигай.</string>
+
+    <string name="accessibility_label">Блокировщик Focuss</string>
+    <string name="accessibility_service_description">Focuss использует это, чтобы обнаруживать и блокировать ограниченные приложения во время запланированных сеансов фокуса. Ничего не покидает ваше устройство.</string>
+    <string name="device_admin_description">Строгий режим использует это только для того, чтобы запретить удаление Focuss во время сеанса фокуса. Он не может блокировать устройство, стирать данные или менять настройки.</string>
+
+    <string name="setup_required">Требуется настройка</string>
+    <string name="setup_subtitle">Focuss нужны 3 разрешения для защиты ваших сеансов фокуса.</string>
+    <string name="granted_progress">Предоставлено %1$d из 3</string>
+    <string name="all_set">Всё готово! Можно начинать.</string>
+    <string name="perm_usage_title">Статистика использования</string>
+    <string name="perm_usage_desc">Определяет, какое приложение сейчас на переднем плане.</string>
+    <string name="perm_overlay_title">Поверх других приложений</string>
+    <string name="perm_overlay_desc">Показывает экран блокировки поверх ограниченных приложений.</string>
+    <string name="perm_accessibility_title">Служба специальных возможностей</string>
+    <string name="perm_accessibility_desc">Механизм, мгновенно обнаруживающий каждый запуск приложения.</string>
+    <string name="grant_access">Предоставить доступ</string>
+    <string name="granted">Предоставлено</string>
+    <string name="privacy_note">Все данные остаются на вашем устройстве. Ничего не отправляется.</string>
+    <string name="continue_to_focuss">Продолжить в Focuss</string>
+    <string name="more_needed">Ещё %1$d</string>
+
+    <string name="reliability_title">Стабильная работа</string>
+    <string name="reliability_desc">Разрешите Focuss игнорировать оптимизацию батареи, чтобы система не останавливала блокировку в фоне.</string>
+    <string name="allow">Разрешить</string>
+    <string name="enabled">Включено</string>
+
+    <string name="protection">Защита</string>
+    <string name="active">Активна</string>
+    <string name="paused">Приостановлена</string>
+    <string name="your_schedules">Ваши расписания</string>
+    <string name="new_schedule">Новое расписание</string>
+    <string name="add_first_schedule">Добавить первое расписание</string>
+    <string name="no_schedules_title">Пока нет расписаний</string>
+    <string name="no_schedules_desc">Создайте расписание, чтобы начать защищать время фокуса.</string>
+    <string name="remaining">осталось</string>
+    <string name="session_locked_toast">Идёт сеанс — редактирование отключено</string>
+    <string name="service_disabled_banner">Служба специальных возможностей выключена — блокировка приостановлена. Нажмите, чтобы включить.</string>
+
+    <string name="edit_schedule">Изменить расписание</string>
+    <string name="schedule_name">Название расписания</string>
+    <string name="start_time">Время начала</string>
+    <string name="end_time">Время окончания</string>
+    <string name="active_days">Активные дни</string>
+    <string name="every_day">Каждый день</string>
+    <string name="weekdays">Будни</string>
+    <string name="weekends">Выходные</string>
+    <string name="blocked_apps">Заблокированные приложения</string>
+    <string name="apps_blocked">Заблокировано приложений: %1$d</string>
+    <string name="one_app_blocked">Заблокировано 1 приложение</string>
+    <string name="no_apps_selected">Приложения не выбраны</string>
+    <string name="edit">Изменить</string>
+    <string name="disable_wait_time">Задержка перед отключением</string>
+    <string name="disable_wait_desc">Сколько секунд ждать перед отключением защиты.</string>
+    <string name="delete_schedule">Удалить расписание</string>
+    <string name="delete_confirm">«%1$s» будет удалено навсегда.</string>
+    <string name="delete">Удалить</string>
+    <string name="keep">Оставить</string>
+
+    <string name="select_apps_to_block">Выберите приложения для блокировки</string>
+    <string name="search_apps">Поиск приложений…</string>
+    <string name="selected_shown">Выбрано: %1$d · показано: %2$d</string>
+    <string name="clear_all">Очистить всё</string>
+    <string name="loading_apps">Загрузка установленных приложений…</string>
+    <string name="save">Сохранить</string>
+    <string name="save_count">Сохранить (заблокировано: %1$d)</string>
+
+    <string name="hold_on">Подождите…</string>
+    <string name="cooldown_message">Сделайте вдох и\nвернитесь к фокусу.</string>
+    <string name="seconds">секунд</string>
+    <string name="cooldown_cancel">Отмена — оставить фокус включённым</string>
+
+    <string name="focus_mode">Режим фокуса</string>
+    <string name="app_blocked">Приложение заблокировано</string>
+    <string name="app_paused">«%1$s» приостановлено во время сеанса фокуса.</string>
+    <string name="go_back_home">Вернуться на главный экран</string>
+    <string name="open_focuss">Открыть Focuss</string>
+
+    <string name="settings">Настройки</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="theme">Тема</string>
+    <string name="theme_system">Как в системе</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="reliability">Надёжность</string>
+    <string name="battery_optimisation">Игнорировать оптимизацию батареи</string>
+    <string name="battery_optimisation_desc">Не даёт системе останавливать Focuss в фоне.</string>
+    <string name="strict_mode">Строгий режим</string>
+    <string name="strict_mode_desc">Запрещает удаление Focuss, пока вы не отключите режим — защищает от импульсивного отказа.</string>
+    <string name="permissions">Разрешения</string>
+    <string name="all_granted">Все предоставлены</string>
+    <string name="review">Проверить</string>
+    <string name="language">Язык</string>
+    <string name="language_system">Системный по умолчанию</string>
+    <string name="overlap_error">Пересекается с другим расписанием — измените время или дни.</string>
+</resources>

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">Concéntrate. Bloquea. Logra.</string>
+
+    <string name="accessibility_label">Bloqueador Focuss</string>
+    <string name="accessibility_service_description">Focuss usa esto para detectar y bloquear apps restringidas durante tus sesiones de concentración programadas. Nada sale de tu dispositivo.</string>
+    <string name="device_admin_description">El modo estricto usa esto solo para impedir que Focuss se desinstale durante una sesión de concentración. No puede bloquear tu dispositivo, borrar datos ni cambiar ajustes.</string>
+
+    <string name="setup_required">Configuración necesaria</string>
+    <string name="setup_subtitle">Focuss necesita 3 permisos para proteger tus sesiones de concentración.</string>
+    <string name="granted_progress">%1$d de 3 concedidos</string>
+    <string name="all_set">¡Todo listo! Preparado para empezar.</string>
+    <string name="perm_usage_title">Estadísticas de uso</string>
+    <string name="perm_usage_desc">Detecta qué app está en primer plano ahora.</string>
+    <string name="perm_overlay_title">Mostrar sobre otras apps</string>
+    <string name="perm_overlay_desc">Muestra la pantalla de bloqueo sobre las apps restringidas.</string>
+    <string name="perm_accessibility_title">Servicio de accesibilidad</string>
+    <string name="perm_accessibility_desc">El motor que detecta al instante cada apertura de app.</string>
+    <string name="grant_access">Conceder acceso</string>
+    <string name="granted">Concedido</string>
+    <string name="privacy_note">Todos los datos permanecen en tu dispositivo. No se envía nada.</string>
+    <string name="continue_to_focuss">Continuar a Focuss</string>
+    <string name="more_needed">Faltan %1$d</string>
+
+    <string name="reliability_title">Funcionar de forma fiable</string>
+    <string name="reliability_desc">Permite que Focuss ignore la optimización de batería para que el sistema no detenga el bloqueo en segundo plano.</string>
+    <string name="allow">Permitir</string>
+    <string name="enabled">Activado</string>
+
+    <string name="protection">Protección</string>
+    <string name="active">Activa</string>
+    <string name="paused">En pausa</string>
+    <string name="your_schedules">Tus horarios</string>
+    <string name="new_schedule">Nuevo horario</string>
+    <string name="add_first_schedule">Añadir primer horario</string>
+    <string name="no_schedules_title">Aún no hay horarios</string>
+    <string name="no_schedules_desc">Crea un horario para empezar a proteger tu tiempo de concentración.</string>
+    <string name="remaining">restante</string>
+    <string name="session_locked_toast">Hay una sesión en curso — la edición está desactivada</string>
+    <string name="service_disabled_banner">El servicio de accesibilidad está desactivado — el bloqueo está en pausa. Toca para reactivar.</string>
+
+    <string name="edit_schedule">Editar horario</string>
+    <string name="schedule_name">Nombre del horario</string>
+    <string name="start_time">Hora de inicio</string>
+    <string name="end_time">Hora de fin</string>
+    <string name="active_days">Días activos</string>
+    <string name="every_day">Todos los días</string>
+    <string name="weekdays">Entre semana</string>
+    <string name="weekends">Fines de semana</string>
+    <string name="blocked_apps">Apps bloqueadas</string>
+    <string name="apps_blocked">%1$d apps bloqueadas</string>
+    <string name="one_app_blocked">1 app bloqueada</string>
+    <string name="no_apps_selected">Ninguna app seleccionada</string>
+    <string name="edit">Editar</string>
+    <string name="disable_wait_time">Tiempo de espera para desactivar</string>
+    <string name="disable_wait_desc">Segundos de espera antes de desactivar la protección.</string>
+    <string name="delete_schedule">Eliminar horario</string>
+    <string name="delete_confirm">\"%1$s\" se eliminará de forma permanente.</string>
+    <string name="delete">Eliminar</string>
+    <string name="keep">Conservar</string>
+
+    <string name="select_apps_to_block">Selecciona apps para bloquear</string>
+    <string name="search_apps">Buscar apps…</string>
+    <string name="selected_shown">%1$d seleccionadas · %2$d mostradas</string>
+    <string name="clear_all">Borrar todo</string>
+    <string name="loading_apps">Cargando apps instaladas…</string>
+    <string name="save">Guardar</string>
+    <string name="save_count">Guardar (%1$d bloqueadas)</string>
+
+    <string name="hold_on">Espera…</string>
+    <string name="cooldown_message">Respira y\nrecupera tu concentración.</string>
+    <string name="seconds">segundos</string>
+    <string name="cooldown_cancel">Cancelar — mantener el foco</string>
+
+    <string name="focus_mode">Modo concentración</string>
+    <string name="app_blocked">App bloqueada</string>
+    <string name="app_paused">«%1$s» está en pausa durante tu sesión de concentración.</string>
+    <string name="go_back_home">Volver al inicio</string>
+    <string name="open_focuss">Abrir Focuss</string>
+
+    <string name="settings">Ajustes</string>
+    <string name="appearance">Apariencia</string>
+    <string name="theme">Tema</string>
+    <string name="theme_system">Seguir al sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="reliability">Fiabilidad</string>
+    <string name="battery_optimisation">Ignorar optimización de batería</string>
+    <string name="battery_optimisation_desc">Evita que el sistema detenga Focuss en segundo plano.</string>
+    <string name="strict_mode">Modo estricto</string>
+    <string name="strict_mode_desc">Impide desinstalar Focuss hasta que lo desactives — evita abandonar por impulso.</string>
+    <string name="permissions">Permisos</string>
+    <string name="all_granted">Todos concedidos</string>
+    <string name="review">Revisar</string>
+    <string name="language">Idioma</string>
+    <string name="language_system">Predeterminado del sistema</string>
+    <string name="overlap_error">Se solapa con otro horario — ajusta la hora o los días.</string>
+</resources>

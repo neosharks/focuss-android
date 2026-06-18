@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">رَكِّز. احْظُر. أَنْجِز.</string>
+
+    <string name="accessibility_label">حاجب Focuss</string>
+    <string name="accessibility_service_description">يستخدم Focuss هذا لاكتشاف التطبيقات المقيّدة وحظرها أثناء جلسات التركيز المجدولة. لا شيء يغادر جهازك.</string>
+    <string name="device_admin_description">يستخدم الوضع الصارم هذا فقط لمنع إلغاء تثبيت Focuss أثناء جلسة التركيز. لا يمكنه قفل جهازك أو مسح البيانات أو تغيير الإعدادات.</string>
+
+    <string name="setup_required">الإعداد مطلوب</string>
+    <string name="setup_subtitle">يحتاج Focuss إلى 3 أذونات لحماية جلسات تركيزك.</string>
+    <string name="granted_progress">%1$d من 3 مُنحت</string>
+    <string name="all_set">كل شيء جاهز! يمكنك البدء.</string>
+    <string name="perm_usage_title">إحصائيات الاستخدام</string>
+    <string name="perm_usage_desc">يكتشف التطبيق الموجود في المقدمة حاليًا.</string>
+    <string name="perm_overlay_title">العرض فوق التطبيقات</string>
+    <string name="perm_overlay_desc">يعرض شاشة الحظر فوق التطبيقات المقيّدة.</string>
+    <string name="perm_accessibility_title">خدمة إمكانية الوصول</string>
+    <string name="perm_accessibility_desc">المحرك الذي يكتشف كل فتح للتطبيق فورًا.</string>
+    <string name="grant_access">منح الإذن</string>
+    <string name="granted">مُنح</string>
+    <string name="privacy_note">تبقى جميع البيانات على جهازك. لا يُرسل أي شيء.</string>
+    <string name="continue_to_focuss">المتابعة إلى Focuss</string>
+    <string name="more_needed">%1$d إذن إضافي مطلوب</string>
+
+    <string name="reliability_title">العمل بشكل موثوق</string>
+    <string name="reliability_desc">اسمح لـ Focuss بتجاهل تحسين البطارية حتى لا يوقف النظام الحظر في الخلفية.</string>
+    <string name="allow">السماح</string>
+    <string name="enabled">مُفعّل</string>
+
+    <string name="protection">الحماية</string>
+    <string name="active">نشطة</string>
+    <string name="paused">متوقفة</string>
+    <string name="your_schedules">جداولك</string>
+    <string name="new_schedule">جدول جديد</string>
+    <string name="add_first_schedule">إضافة أول جدول</string>
+    <string name="no_schedules_title">لا توجد جداول بعد</string>
+    <string name="no_schedules_desc">أنشئ جدولًا لبدء حماية وقت تركيزك.</string>
+    <string name="remaining">متبقٍ</string>
+    <string name="session_locked_toast">هناك جلسة جارية — التعديل معطّل</string>
+    <string name="service_disabled_banner">خدمة إمكانية الوصول متوقفة — الحظر متوقف. انقر لإعادة التفعيل.</string>
+
+    <string name="edit_schedule">تعديل الجدول</string>
+    <string name="schedule_name">اسم الجدول</string>
+    <string name="start_time">وقت البدء</string>
+    <string name="end_time">وقت الانتهاء</string>
+    <string name="active_days">الأيام النشطة</string>
+    <string name="every_day">كل يوم</string>
+    <string name="weekdays">أيام الأسبوع</string>
+    <string name="weekends">عطلة نهاية الأسبوع</string>
+    <string name="blocked_apps">التطبيقات المحظورة</string>
+    <string name="apps_blocked">%1$d تطبيقات محظورة</string>
+    <string name="one_app_blocked">تطبيق واحد محظور</string>
+    <string name="no_apps_selected">لم يتم اختيار أي تطبيق</string>
+    <string name="edit">تعديل</string>
+    <string name="disable_wait_time">مدة الانتظار للتعطيل</string>
+    <string name="disable_wait_desc">عدد الثواني قبل إيقاف الحماية.</string>
+    <string name="delete_schedule">حذف الجدول</string>
+    <string name="delete_confirm">سيتم حذف \"%1$s\" نهائيًا.</string>
+    <string name="delete">حذف</string>
+    <string name="keep">الاحتفاظ</string>
+
+    <string name="select_apps_to_block">اختر التطبيقات المراد حظرها</string>
+    <string name="search_apps">ابحث عن التطبيقات…</string>
+    <string name="selected_shown">%1$d محددة · %2$d معروضة</string>
+    <string name="clear_all">مسح الكل</string>
+    <string name="loading_apps">جارٍ تحميل التطبيقات المثبتة…</string>
+    <string name="save">حفظ</string>
+    <string name="save_count">حفظ (%1$d محظورة)</string>
+
+    <string name="hold_on">انتظر…</string>
+    <string name="cooldown_message">خذ نفسًا\nواستعد تركيزك.</string>
+    <string name="seconds">ثوانٍ</string>
+    <string name="cooldown_cancel">إلغاء — أبقِ التركيز مفعّلًا</string>
+
+    <string name="focus_mode">وضع التركيز</string>
+    <string name="app_blocked">التطبيق محظور</string>
+    <string name="app_paused">‏«%1$s» متوقف أثناء جلسة تركيزك.</string>
+    <string name="go_back_home">العودة إلى الصفحة الرئيسية</string>
+    <string name="open_focuss">فتح Focuss</string>
+
+    <string name="settings">الإعدادات</string>
+    <string name="appearance">المظهر</string>
+    <string name="theme">السمة</string>
+    <string name="theme_system">اتباع النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="reliability">الموثوقية</string>
+    <string name="battery_optimisation">تجاهل تحسين البطارية</string>
+    <string name="battery_optimisation_desc">يمنع النظام من إيقاف Focuss في الخلفية.</string>
+    <string name="strict_mode">الوضع الصارم</string>
+    <string name="strict_mode_desc">يمنع إلغاء تثبيت Focuss حتى توقفه — يحول دون الانسحاب الاندفاعي.</string>
+    <string name="permissions">الأذونات</string>
+    <string name="all_granted">كلها مُنحت</string>
+    <string name="review">مراجعة</string>
+    <string name="language">اللغة</string>
+    <string name="language_system">إعداد النظام الافتراضي</string>
+    <string name="overlap_error">يتداخل مع جدول آخر — عدّل الوقت أو الأيام.</string>
+</resources>

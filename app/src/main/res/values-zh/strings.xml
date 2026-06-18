@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">专注。屏蔽。成就。</string>
+
+    <string name="accessibility_label">Focuss 拦截器</string>
+    <string name="accessibility_service_description">Focuss 借此在你设定的专注时段内检测并屏蔽受限应用。所有数据都不会离开你的设备。</string>
+    <string name="device_admin_description">严格模式仅用此来防止在专注时段内卸载 Focuss。它无法锁定设备、清除数据或更改设置。</string>
+
+    <string name="setup_required">需要设置</string>
+    <string name="setup_subtitle">Focuss 需要 3 项权限来保护你的专注时段。</string>
+    <string name="granted_progress">已授予 %1$d/3</string>
+    <string name="all_set">一切就绪！可以开始了。</string>
+    <string name="perm_usage_title">使用情况统计</string>
+    <string name="perm_usage_desc">检测当前位于前台的应用。</string>
+    <string name="perm_overlay_title">显示在其他应用上层</string>
+    <string name="perm_overlay_desc">在受限应用上方显示专注屏蔽界面。</string>
+    <string name="perm_accessibility_title">无障碍服务</string>
+    <string name="perm_accessibility_desc">即时检测每次应用启动的核心引擎。</string>
+    <string name="grant_access">授予权限</string>
+    <string name="granted">已授予</string>
+    <string name="privacy_note">所有数据都保存在你的设备上，不会发送到任何地方。</string>
+    <string name="continue_to_focuss">继续使用 Focuss</string>
+    <string name="more_needed">还需 %1$d 项</string>
+
+    <string name="reliability_title">保持稳定运行</string>
+    <string name="reliability_desc">允许 Focuss 忽略电池优化，以免系统在后台停止屏蔽。</string>
+    <string name="allow">允许</string>
+    <string name="enabled">已启用</string>
+
+    <string name="protection">保护</string>
+    <string name="active">已启用</string>
+    <string name="paused">已暂停</string>
+    <string name="your_schedules">你的计划</string>
+    <string name="new_schedule">新建计划</string>
+    <string name="add_first_schedule">添加第一个计划</string>
+    <string name="no_schedules_title">暂无计划</string>
+    <string name="no_schedules_desc">创建一个计划，开始保护你的专注时间。</string>
+    <string name="remaining">剩余</string>
+    <string name="session_locked_toast">有专注时段进行中 — 已禁用编辑</string>
+    <string name="service_disabled_banner">无障碍服务已关闭 — 屏蔽已暂停。点按重新启用。</string>
+
+    <string name="edit_schedule">编辑计划</string>
+    <string name="schedule_name">计划名称</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="active_days">生效日</string>
+    <string name="every_day">每天</string>
+    <string name="weekdays">工作日</string>
+    <string name="weekends">周末</string>
+    <string name="blocked_apps">已屏蔽的应用</string>
+    <string name="apps_blocked">已屏蔽 %1$d 个应用</string>
+    <string name="one_app_blocked">已屏蔽 1 个应用</string>
+    <string name="no_apps_selected">未选择应用</string>
+    <string name="edit">编辑</string>
+    <string name="disable_wait_time">关闭等待时间</string>
+    <string name="disable_wait_desc">保护关闭前需等待的秒数。</string>
+    <string name="delete_schedule">删除计划</string>
+    <string name="delete_confirm">将永久删除“%1$s”。</string>
+    <string name="delete">删除</string>
+    <string name="keep">保留</string>
+
+    <string name="select_apps_to_block">选择要屏蔽的应用</string>
+    <string name="search_apps">搜索应用…</string>
+    <string name="selected_shown">已选 %1$d · 显示 %2$d</string>
+    <string name="clear_all">全部清除</string>
+    <string name="loading_apps">正在加载已安装的应用…</string>
+    <string name="save">保存</string>
+    <string name="save_count">保存（已屏蔽 %1$d）</string>
+
+    <string name="hold_on">稍等…</string>
+    <string name="cooldown_message">深呼吸，\n重新找回专注。</string>
+    <string name="seconds">秒</string>
+    <string name="cooldown_cancel">取消 — 继续保持专注</string>
+
+    <string name="focus_mode">专注模式</string>
+    <string name="app_blocked">应用已屏蔽</string>
+    <string name="app_paused">在你的专注时段内，“%1$s”已暂停。</string>
+    <string name="go_back_home">返回主屏幕</string>
+    <string name="open_focuss">打开 Focuss</string>
+
+    <string name="settings">设置</string>
+    <string name="appearance">外观</string>
+    <string name="theme">主题</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="reliability">可靠性</string>
+    <string name="battery_optimisation">忽略电池优化</string>
+    <string name="battery_optimisation_desc">防止系统在后台停止 Focuss。</string>
+    <string name="strict_mode">严格模式</string>
+    <string name="strict_mode_desc">在你关闭前阻止卸载 Focuss — 防止冲动退出。</string>
+    <string name="permissions">权限</string>
+    <string name="all_granted">已全部授予</string>
+    <string name="review">查看</string>
+    <string name="language">语言</string>
+    <string name="language_system">跟随系统</string>
+    <string name="overlap_error">与另一个计划重叠 — 请调整时间或日期。</string>
+</resources>

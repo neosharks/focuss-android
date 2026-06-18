@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">Concentre. Bloqueie. Conquiste.</string>
+
+    <string name="accessibility_label">Bloqueador Focuss</string>
+    <string name="accessibility_service_description">O Focuss usa isto para detectar e bloquear apps restritos durante suas sessões de foco agendadas. Nada sai do seu dispositivo.</string>
+    <string name="device_admin_description">O modo rígido usa isto apenas para impedir a desinstalação do Focuss durante uma sessão de foco. Ele não pode bloquear o dispositivo, apagar dados nem alterar configurações.</string>
+
+    <string name="setup_required">Configuração necessária</string>
+    <string name="setup_subtitle">O Focuss precisa de 3 permissões para proteger suas sessões de foco.</string>
+    <string name="granted_progress">%1$d de 3 concedidas</string>
+    <string name="all_set">Tudo pronto! Pode começar.</string>
+    <string name="perm_usage_title">Estatísticas de uso</string>
+    <string name="perm_usage_desc">Detecta qual app está em primeiro plano agora.</string>
+    <string name="perm_overlay_title">Exibir sobre outros apps</string>
+    <string name="perm_overlay_desc">Mostra a tela de bloqueio sobre os apps restritos.</string>
+    <string name="perm_accessibility_title">Serviço de acessibilidade</string>
+    <string name="perm_accessibility_desc">O motor que detecta instantaneamente cada abertura de app.</string>
+    <string name="grant_access">Conceder acesso</string>
+    <string name="granted">Concedida</string>
+    <string name="privacy_note">Todos os dados permanecem no seu dispositivo. Nada é enviado.</string>
+    <string name="continue_to_focuss">Continuar para o Focuss</string>
+    <string name="more_needed">Faltam %1$d</string>
+
+    <string name="reliability_title">Funcionar de forma confiável</string>
+    <string name="reliability_desc">Permita que o Focuss ignore a otimização de bateria para que o sistema não interrompa o bloqueio em segundo plano.</string>
+    <string name="allow">Permitir</string>
+    <string name="enabled">Ativado</string>
+
+    <string name="protection">Proteção</string>
+    <string name="active">Ativa</string>
+    <string name="paused">Pausada</string>
+    <string name="your_schedules">Seus horários</string>
+    <string name="new_schedule">Novo horário</string>
+    <string name="add_first_schedule">Adicionar primeiro horário</string>
+    <string name="no_schedules_title">Ainda sem horários</string>
+    <string name="no_schedules_desc">Crie um horário para começar a proteger seu tempo de foco.</string>
+    <string name="remaining">restante</string>
+    <string name="session_locked_toast">Há uma sessão em andamento — edição desativada</string>
+    <string name="service_disabled_banner">Serviço de acessibilidade desligado — bloqueio pausado. Toque para reativar.</string>
+
+    <string name="edit_schedule">Editar horário</string>
+    <string name="schedule_name">Nome do horário</string>
+    <string name="start_time">Hora de início</string>
+    <string name="end_time">Hora de término</string>
+    <string name="active_days">Dias ativos</string>
+    <string name="every_day">Todos os dias</string>
+    <string name="weekdays">Dias úteis</string>
+    <string name="weekends">Fins de semana</string>
+    <string name="blocked_apps">Apps bloqueados</string>
+    <string name="apps_blocked">%1$d apps bloqueados</string>
+    <string name="one_app_blocked">1 app bloqueado</string>
+    <string name="no_apps_selected">Nenhum app selecionado</string>
+    <string name="edit">Editar</string>
+    <string name="disable_wait_time">Tempo de espera para desativar</string>
+    <string name="disable_wait_desc">Segundos a aguardar antes de desligar a proteção.</string>
+    <string name="delete_schedule">Excluir horário</string>
+    <string name="delete_confirm">\"%1$s\" será excluído permanentemente.</string>
+    <string name="delete">Excluir</string>
+    <string name="keep">Manter</string>
+
+    <string name="select_apps_to_block">Selecione apps para bloquear</string>
+    <string name="search_apps">Buscar apps…</string>
+    <string name="selected_shown">%1$d selecionados · %2$d exibidos</string>
+    <string name="clear_all">Limpar tudo</string>
+    <string name="loading_apps">Carregando apps instalados…</string>
+    <string name="save">Salvar</string>
+    <string name="save_count">Salvar (%1$d bloqueados)</string>
+
+    <string name="hold_on">Espere…</string>
+    <string name="cooldown_message">Respire e\nrecupere seu foco.</string>
+    <string name="seconds">segundos</string>
+    <string name="cooldown_cancel">Cancelar — manter o foco ativo</string>
+
+    <string name="focus_mode">Modo foco</string>
+    <string name="app_blocked">App bloqueado</string>
+    <string name="app_paused">“%1$s” está pausado durante sua sessão de foco.</string>
+    <string name="go_back_home">Voltar ao início</string>
+    <string name="open_focuss">Abrir o Focuss</string>
+
+    <string name="settings">Configurações</string>
+    <string name="appearance">Aparência</string>
+    <string name="theme">Tema</string>
+    <string name="theme_system">Seguir o sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="reliability">Confiabilidade</string>
+    <string name="battery_optimisation">Ignorar otimização de bateria</string>
+    <string name="battery_optimisation_desc">Impede que o sistema interrompa o Focuss em segundo plano.</string>
+    <string name="strict_mode">Modo rígido</string>
+    <string name="strict_mode_desc">Bloqueia a desinstalação do Focuss até você desativar — evita desistências por impulso.</string>
+    <string name="permissions">Permissões</string>
+    <string name="all_granted">Todas concedidas</string>
+    <string name="review">Revisar</string>
+    <string name="language">Idioma</string>
+    <string name="language_system">Padrão do sistema</string>
+    <string name="overlap_error">Sobrepõe-se a outro horário — ajuste a hora ou os dias.</string>
+</resources>

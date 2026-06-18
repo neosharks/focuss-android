@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">توجہ دیں. بلاک کریں. حاصل کریں.</string>
+
+    <string name="accessibility_label">Focuss بلاکر</string>
+    <string name="accessibility_service_description">Focuss اسے آپ کے مقررہ فوکس سیشنز کے دوران محدود ایپس کا پتہ لگانے اور انہیں بلاک کرنے کے لیے استعمال کرتا ہے۔ کچھ بھی آپ کے آلے سے باہر نہیں جاتا۔</string>
+    <string name="device_admin_description">سخت موڈ اسے صرف فوکس سیشن کے دوران Focuss کو ان انسٹال ہونے سے روکنے کے لیے استعمال کرتا ہے۔ یہ آپ کے آلے کو لاک نہیں کر سکتا، ڈیٹا نہیں مٹا سکتا یا ترتیبات نہیں بدل سکتا۔</string>
+
+    <string name="setup_required">سیٹ اپ ضروری ہے</string>
+    <string name="setup_subtitle">آپ کے فوکس سیشنز کی حفاظت کے لیے Focuss کو 3 اجازتیں درکار ہیں۔</string>
+    <string name="granted_progress">3 میں سے %1$d دی گئیں</string>
+    <string name="all_set">سب تیار! چلنے کے لیے تیار۔</string>
+    <string name="perm_usage_title">استعمال کے اعداد و شمار</string>
+    <string name="perm_usage_desc">پتہ لگاتا ہے کہ ابھی کون سی ایپ سامنے ہے۔</string>
+    <string name="perm_overlay_title">ایپس کے اوپر دکھائیں</string>
+    <string name="perm_overlay_desc">محدود ایپس کے اوپر فوکس بلاک اسکرین دکھاتا ہے۔</string>
+    <string name="perm_accessibility_title">ایکسیسبیلٹی سروس</string>
+    <string name="perm_accessibility_desc">وہ انجن جو ہر ایپ کے کھلنے کا فوراً پتہ لگاتا ہے۔</string>
+    <string name="grant_access">اجازت دیں</string>
+    <string name="granted">دی گئی</string>
+    <string name="privacy_note">تمام ڈیٹا آپ کے آلے پر ہی رہتا ہے۔ کچھ بھی کہیں نہیں بھیجا جاتا۔</string>
+    <string name="continue_to_focuss">Focuss پر جاری رکھیں</string>
+    <string name="more_needed">%1$d مزید درکار</string>
+
+    <string name="reliability_title">قابل اعتماد طریقے سے چلتے رہنا</string>
+    <string name="reliability_desc">Focuss کو بیٹری آپٹیمائزیشن نظر انداز کرنے دیں تاکہ سسٹم پس منظر میں بلاکنگ نہ روکے۔</string>
+    <string name="allow">اجازت دیں</string>
+    <string name="enabled">فعال</string>
+
+    <string name="protection">تحفظ</string>
+    <string name="active">فعال</string>
+    <string name="paused">رکا ہوا</string>
+    <string name="your_schedules">آپ کے شیڈول</string>
+    <string name="new_schedule">نیا شیڈول</string>
+    <string name="add_first_schedule">پہلا شیڈول شامل کریں</string>
+    <string name="no_schedules_title">ابھی کوئی شیڈول نہیں</string>
+    <string name="no_schedules_desc">اپنے فوکس وقت کی حفاظت شروع کرنے کے لیے ایک شیڈول بنائیں۔</string>
+    <string name="remaining">باقی</string>
+    <string name="session_locked_toast">ایک سیشن جاری ہے — ترمیم غیر فعال ہے</string>
+    <string name="service_disabled_banner">ایکسیسبیلٹی سروس بند ہے — بلاکنگ رکی ہوئی ہے۔ دوبارہ فعال کرنے کے لیے ٹیپ کریں۔</string>
+
+    <string name="edit_schedule">شیڈول میں ترمیم کریں</string>
+    <string name="schedule_name">شیڈول کا نام</string>
+    <string name="start_time">آغاز کا وقت</string>
+    <string name="end_time">اختتام کا وقت</string>
+    <string name="active_days">فعال دن</string>
+    <string name="every_day">ہر دن</string>
+    <string name="weekdays">کام کے دن</string>
+    <string name="weekends">ہفتے کا اختتام</string>
+    <string name="blocked_apps">بلاک شدہ ایپس</string>
+    <string name="apps_blocked">%1$d ایپس بلاک شدہ</string>
+    <string name="one_app_blocked">1 ایپ بلاک شدہ</string>
+    <string name="no_apps_selected">کوئی ایپ منتخب نہیں</string>
+    <string name="edit">ترمیم</string>
+    <string name="disable_wait_time">غیر فعال کرنے کا انتظار وقت</string>
+    <string name="disable_wait_desc">تحفظ بند ہونے سے پہلے انتظار کے سیکنڈ۔</string>
+    <string name="delete_schedule">شیڈول حذف کریں</string>
+    <string name="delete_confirm">\"%1$s\" مستقل طور پر حذف ہو جائے گا۔</string>
+    <string name="delete">حذف کریں</string>
+    <string name="keep">رکھیں</string>
+
+    <string name="select_apps_to_block">بلاک کرنے کے لیے ایپس منتخب کریں</string>
+    <string name="search_apps">ایپس تلاش کریں…</string>
+    <string name="selected_shown">%1$d منتخب · %2$d دکھائے گئے</string>
+    <string name="clear_all">سب صاف کریں</string>
+    <string name="loading_apps">انسٹال شدہ ایپس لوڈ ہو رہی ہیں…</string>
+    <string name="save">محفوظ کریں</string>
+    <string name="save_count">محفوظ کریں (%1$d بلاک)</string>
+
+    <string name="hold_on">رکیے…</string>
+    <string name="cooldown_message">ایک سانس لیں اور\nاپنی توجہ واپس پائیں۔</string>
+    <string name="seconds">سیکنڈ</string>
+    <string name="cooldown_cancel">منسوخ کریں — فوکس آن رکھیں</string>
+
+    <string name="focus_mode">فوکس موڈ</string>
+    <string name="app_blocked">ایپ بلاک شدہ</string>
+    <string name="app_paused">آپ کے فوکس سیشن کے دوران “%1$s” رکا ہوا ہے۔</string>
+    <string name="go_back_home">ہوم پر واپس جائیں</string>
+    <string name="open_focuss">Focuss کھولیں</string>
+
+    <string name="settings">ترتیبات</string>
+    <string name="appearance">ظاہری شکل</string>
+    <string name="theme">تھیم</string>
+    <string name="theme_system">سسٹم کے مطابق</string>
+    <string name="theme_light">لائٹ</string>
+    <string name="theme_dark">ڈارک</string>
+    <string name="reliability">قابلِ اعتماد</string>
+    <string name="battery_optimisation">بیٹری آپٹیمائزیشن نظر انداز کریں</string>
+    <string name="battery_optimisation_desc">سسٹم کو پس منظر میں Focuss روکنے سے روکتا ہے۔</string>
+    <string name="strict_mode">سخت موڈ</string>
+    <string name="strict_mode_desc">جب تک آپ اسے بند نہ کریں Focuss کو ان انسٹال ہونے سے روکیں — جذباتی طور پر چھوڑنے سے روکتا ہے۔</string>
+    <string name="permissions">اجازتیں</string>
+    <string name="all_granted">سب دی گئیں</string>
+    <string name="review">جائزہ لیں</string>
+    <string name="language">زبان</string>
+    <string name="language_system">سسٹم ڈیفالٹ</string>
+    <string name="overlap_error">یہ کسی دوسرے شیڈول سے ٹکراتا ہے — وقت یا دن تبدیل کریں۔</string>
+</resources>

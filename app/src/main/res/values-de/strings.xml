@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Focuss</string>
+    <string name="tagline">Fokussieren. Blockieren. Erreichen.</string>
+
+    <string name="accessibility_label">Focuss Blocker</string>
+    <string name="accessibility_service_description">Focuss nutzt dies, um eingeschränkte Apps während deiner geplanten Fokus-Sitzungen zu erkennen und zu blockieren. Nichts verlässt dein Gerät.</string>
+    <string name="device_admin_description">Der strenge Modus nutzt dies nur, um zu verhindern, dass Focuss während einer Fokus-Sitzung deinstalliert wird. Er kann dein Gerät nicht sperren, keine Daten löschen und keine Einstellungen ändern.</string>
+
+    <string name="setup_required">Einrichtung erforderlich</string>
+    <string name="setup_subtitle">Focuss benötigt 3 Berechtigungen, um deine Fokus-Sitzungen zu schützen.</string>
+    <string name="granted_progress">%1$d von 3 erteilt</string>
+    <string name="all_set">Alles bereit! Es kann losgehen.</string>
+    <string name="perm_usage_title">Nutzungsdaten</string>
+    <string name="perm_usage_desc">Erkennt, welche App gerade im Vordergrund läuft.</string>
+    <string name="perm_overlay_title">Über anderen Apps anzeigen</string>
+    <string name="perm_overlay_desc">Zeigt den Fokus-Sperrbildschirm über eingeschränkten Apps an.</string>
+    <string name="perm_accessibility_title">Bedienungshilfe</string>
+    <string name="perm_accessibility_desc">Die Engine, die jeden App-Start sofort erkennt.</string>
+    <string name="grant_access">Zugriff erlauben</string>
+    <string name="granted">Erteilt</string>
+    <string name="privacy_note">Alle Daten bleiben auf deinem Gerät. Es wird nichts gesendet.</string>
+    <string name="continue_to_focuss">Weiter zu Focuss</string>
+    <string name="more_needed">Noch %1$d benötigt</string>
+
+    <string name="reliability_title">Zuverlässig im Hintergrund</string>
+    <string name="reliability_desc">Erlaube Focuss, die Akku-Optimierung zu ignorieren, damit das System das Blockieren im Hintergrund nicht stoppt.</string>
+    <string name="allow">Erlauben</string>
+    <string name="enabled">Aktiviert</string>
+
+    <string name="protection">Schutz</string>
+    <string name="active">Aktiv</string>
+    <string name="paused">Pausiert</string>
+    <string name="your_schedules">Deine Zeitpläne</string>
+    <string name="new_schedule">Neuer Zeitplan</string>
+    <string name="add_first_schedule">Ersten Zeitplan hinzufügen</string>
+    <string name="no_schedules_title">Noch keine Zeitpläne</string>
+    <string name="no_schedules_desc">Erstelle einen Zeitplan, um deine Fokuszeit zu schützen.</string>
+    <string name="remaining">verbleibend</string>
+    <string name="session_locked_toast">Eine Sitzung läuft — Bearbeiten ist deaktiviert</string>
+    <string name="service_disabled_banner">Bedienungshilfe ist aus — Blockieren pausiert. Zum Reaktivieren tippen.</string>
+
+    <string name="edit_schedule">Zeitplan bearbeiten</string>
+    <string name="schedule_name">Name des Zeitplans</string>
+    <string name="start_time">Startzeit</string>
+    <string name="end_time">Endzeit</string>
+    <string name="active_days">Aktive Tage</string>
+    <string name="every_day">Jeden Tag</string>
+    <string name="weekdays">Wochentags</string>
+    <string name="weekends">Wochenende</string>
+    <string name="blocked_apps">Blockierte Apps</string>
+    <string name="apps_blocked">%1$d Apps blockiert</string>
+    <string name="one_app_blocked">1 App blockiert</string>
+    <string name="no_apps_selected">Keine Apps ausgewählt</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="disable_wait_time">Wartezeit zum Deaktivieren</string>
+    <string name="disable_wait_desc">Sekunden, die gewartet wird, bevor der Schutz endet.</string>
+    <string name="delete_schedule">Zeitplan löschen</string>
+    <string name="delete_confirm">\"%1$s\" wird dauerhaft gelöscht.</string>
+    <string name="delete">Löschen</string>
+    <string name="keep">Behalten</string>
+
+    <string name="select_apps_to_block">Apps zum Blockieren auswählen</string>
+    <string name="search_apps">Apps suchen…</string>
+    <string name="selected_shown">%1$d ausgewählt · %2$d angezeigt</string>
+    <string name="clear_all">Alle entfernen</string>
+    <string name="loading_apps">Installierte Apps werden geladen…</string>
+    <string name="save">Speichern</string>
+    <string name="save_count">Speichern (%1$d blockiert)</string>
+
+    <string name="hold_on">Moment…</string>
+    <string name="cooldown_message">Atme durch und\nfinde deinen Fokus wieder.</string>
+    <string name="seconds">Sekunden</string>
+    <string name="cooldown_cancel">Abbrechen — Fokus anlassen</string>
+
+    <string name="focus_mode">Fokusmodus</string>
+    <string name="app_blocked">App blockiert</string>
+    <string name="app_paused">„%1$s“ ist während deiner Fokus-Sitzung pausiert.</string>
+    <string name="go_back_home">Zurück zum Startbildschirm</string>
+    <string name="open_focuss">Focuss öffnen</string>
+
+    <string name="settings">Einstellungen</string>
+    <string name="appearance">Darstellung</string>
+    <string name="theme">Design</string>
+    <string name="theme_system">System folgen</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="reliability">Zuverlässigkeit</string>
+    <string name="battery_optimisation">Akku-Optimierung ignorieren</string>
+    <string name="battery_optimisation_desc">Verhindert, dass das System Focuss im Hintergrund stoppt.</string>
+    <string name="strict_mode">Strenger Modus</string>
+    <string name="strict_mode_desc">Blockiert das Deinstallieren von Focuss, bis du dies ausschaltest — verhindert impulsives Aufgeben.</string>
+    <string name="permissions">Berechtigungen</string>
+    <string name="all_granted">Alle erteilt</string>
+    <string name="review">Prüfen</string>
+    <string name="language">Sprache</string>
+    <string name="language_system">Systemstandard</string>
+    <string name="overlap_error">Überschneidet sich mit einem anderen Zeitplan — Zeit oder Tage anpassen.</string>
+</resources>
