@@ -20,6 +20,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.rounded.BatteryChargingFull
+import androidx.compose.material.icons.rounded.Code
 import androidx.compose.material.icons.rounded.Language
 import androidx.compose.material.icons.rounded.Lock
 import androidx.compose.material.icons.rounded.Palette
@@ -44,6 +45,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -177,6 +179,16 @@ fun SettingsScreen(
                 title = stringResource(R.string.permissions),
                 subtitle = stringResource(if (state.allPermissionsGranted) R.string.all_granted else R.string.setup_required),
                 trailing = { TextButton(onClick = onReviewPermissions) { Text(stringResource(R.string.review)) } },
+            )
+
+            Spacer(Modifier.height(20.dp))
+            SectionLabel(stringResource(R.string.about), modifier = Modifier.padding(start = 2.dp, bottom = 8.dp))
+            val uriHandler = LocalUriHandler.current
+            SettingRow(
+                icon = Icons.Rounded.Code,
+                title = stringResource(R.string.open_source_footer),
+                subtitle = stringResource(R.string.view_on_github),
+                onClick = { uriHandler.openUri("https://github.com/neosharks/focuss-android") },
             )
 
             Spacer(Modifier.height(32.dp))

@@ -23,10 +23,13 @@ class ScheduleStore(context: Context) {
     }
 
     fun saveAll(schedules: List<Schedule>) {
+        // Schedules are critical, low-frequency data and the accessibility service
+        // reads them straight off disk — commit() (synchronous) guarantees the write
+        // has landed before we return, so the service never sees a stale revision.
         prefs.edit()
             .putString(KEY, encode(schedules))
             .putLong(REVISION_KEY, revision + 1)
-            .apply()
+            .commit()
     }
 
     fun upsert(schedule: Schedule): List<Schedule> {

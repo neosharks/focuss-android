@@ -1,6 +1,7 @@
 package com.focuss.ui
 
 import android.app.Application
+import android.graphics.Bitmap
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.focuss.FocussApp
@@ -114,6 +115,10 @@ class FocussViewModel(app: Application) : AndroidViewModel(app) {
             _state.update { it.copy(installedApps = apps, appsLoading = false) }
         }
     }
+
+    /** Lazily decode a single app's icon off the main thread (cached in the repo). */
+    suspend fun loadIcon(packageName: String): Bitmap? =
+        withContext(Dispatchers.IO) { repo.loadIcon(packageName) }
 
     // ── Protection control ───────────────────────────────────────────────────
 

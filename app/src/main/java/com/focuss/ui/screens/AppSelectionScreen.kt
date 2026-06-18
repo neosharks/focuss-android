@@ -32,9 +32,11 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
+import android.graphics.Bitmap
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -57,6 +59,7 @@ import com.focuss.ui.UiState
 fun AppSelectionScreen(
     state: UiState,
     initiallySelected: Set<String>,
+    loadIcon: suspend (String) -> Bitmap?,
     onBack: () -> Unit,
     onSave: (Set<String>) -> Unit,
 ) {
@@ -153,6 +156,7 @@ fun AppSelectionScreen(
                         AppRow(
                             app = app,
                             checked = app.packageName in selected,
+                            loadIcon = loadIcon,
                             onToggle = {
                                 selected = if (app.packageName in selected) {
                                     selected - app.packageName
@@ -191,8 +195,18 @@ fun AppSelectionScreen(
 }
 
 @Composable
-private fun AppRow(app: InstalledApp, checked: Boolean, onToggle: () -> Unit) {
+private fun AppRow(
+    app: InstalledApp,
+    checked: Boolean,
+    loadIcon: suspend (String) -> Bitmap?,
+    onToggle: () -> Unit,
+) {
     val cs = MaterialTheme.colorScheme
+    // Decode this row's icon lazily and off the main thread; keyed on the package
+    // so recycled rows in the LazyColumn re-fetch for their new app.
+    val icon by produceState<Bitmap?>(initialValue = null, app.packageName) {
+        value = loadIcon(app.packageName)
+    }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
@@ -207,9 +221,9 @@ private fun AppRow(app: InstalledApp, checked: Boolean, onToggle: () -> Unit) {
                 .clip(RoundedCornerShape(12.dp))
                 .background(cs.primary.copy(alpha = 0.12f)),
         ) {
-            if (app.icon != null) {
+            if (icon != null) {
                 Image(
-                    bitmap = app.icon.asImageBitmap(),
+                    bitmap = icon!!.asImageBitmap(),
                     contentDescription = null,
                     contentScale = ContentScale.Fit,
                     modifier = Modifier.size(44.dp).clip(RoundedCornerShape(12.dp)),

@@ -1,7 +1,5 @@
 package com.focuss.data
 
-import android.graphics.Bitmap
-
 /** A point in the day, 24-hour based. */
 data class TimeSlot(val hour: Int, val minute: Int) {
     /** Minutes since midnight — handy for comparisons. */
@@ -24,9 +22,12 @@ data class Schedule(
     val createdAt: Long,
 )
 
-/** A launchable app the user can choose to block. */
+/**
+ * A launchable app the user can choose to block. Icons are intentionally *not*
+ * carried here — they're loaded lazily per visible row (see AppRepository.loadIcon)
+ * so the picker can show the list instantly instead of decoding ~200 icons up front.
+ */
 data class InstalledApp(
     val packageName: String,
     val appName: String,
-    val icon: Bitmap?,
 )

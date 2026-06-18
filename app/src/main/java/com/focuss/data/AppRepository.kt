@@ -34,7 +34,13 @@ class AppRepository(private val context: Context) {
 
     // ── Installed apps ────────────────────────────────────────────────────────
 
-    /** All launchable apps except Focuss itself, sorted by name. Loads icons too. */
+    /** Decoded icons, keyed by package name. Bounded by the number of installed apps. */
+    private val iconCache = java.util.concurrent.ConcurrentHashMap<String, Bitmap>()
+
+    /**
+     * All launchable apps except Focuss itself, sorted by name. Cheap — just names
+     * and package ids, no icon decoding. Icons are fetched lazily via [loadIcon].
+     */
     fun loadInstalledApps(): List<InstalledApp> {
         val pm = appContext.packageManager
         return pm.getInstalledApplications(PackageManager.GET_META_DATA)
@@ -45,13 +51,18 @@ class AppRepository(private val context: Context) {
                 InstalledApp(
                     packageName = info.packageName,
                     appName = pm.getApplicationLabel(info).toString(),
-                    icon = runCatching {
-                        pm.getApplicationIcon(info.packageName).toScaledBitmap(96)
-                    }.getOrNull(),
                 )
             }
             .sortedBy { it.appName.lowercase() }
             .toList()
+    }
+
+    /** Decodes (and caches) a single app's icon. Call off the main thread. */
+    fun loadIcon(packageName: String): Bitmap? {
+        iconCache[packageName]?.let { return it }
+        return runCatching {
+            appContext.packageManager.getApplicationIcon(packageName).toScaledBitmap(96)
+        }.getOrNull()?.also { iconCache[packageName] = it }
     }
 
     private fun Drawable.toScaledBitmap(size: Int): Bitmap {

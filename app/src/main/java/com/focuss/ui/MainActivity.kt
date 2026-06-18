@@ -180,7 +180,15 @@ private fun FocussApp(vm: FocussViewModel) {
             val id = entry.arguments?.getString("id")
             val schedule = vm.scheduleById(id)
             if (schedule == null) {
-                LaunchedEffect(Unit) { nav.popBackStack() }
+                // Safety net for an unknown/already-removed id. Guard on the entry's
+                // lifecycle so this doesn't fire a *second* pop while the editor is
+                // already being popped after a delete — that would pop "home" too and
+                // leave the NavHost empty (blank screen).
+                LaunchedEffect(Unit) {
+                    if (entry.lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)) {
+                        nav.popBackStack()
+                    }
+                }
             } else {
                 ScheduleEditorScreen(
                     initial = schedule,
@@ -206,6 +214,7 @@ private fun FocussApp(vm: FocussViewModel) {
             AppSelectionScreen(
                 state = state,
                 initiallySelected = schedule?.blockedApps ?: emptySet(),
+                loadIcon = vm::loadIcon,
                 onBack = { nav.popBackStack() },
                 onSave = { picked ->
                     schedule?.let { vm.upsertSchedule(it.copy(blockedApps = picked)) }
