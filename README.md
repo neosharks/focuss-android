@@ -1,12 +1,32 @@
-# Focuss — Native Android (Kotlin + Jetpack Compose)
+# Focuss
 
-A from-scratch, **pure native Android** rewrite of the React Native `focuss` app. Same
-behaviour, no JavaScript runtime, no bridge — the backend is plain Android and the UI is
-Jetpack Compose with a more minimal, ergonomic redesign.
+**Focuss** is a free, open source app blocker for Android that helps you protect your focus
+time. Pick the apps that distract you, set the hours they should be off-limits, and Focuss
+keeps them shut during your focus sessions — nothing more.
 
-Focuss blocks distracting apps during user-defined focus schedules. When a blocked app is
-opened during an active schedule, a full-screen wall takes over until the session ends (or
-the user waits out a cooldown to disable protection).
+- 🪶 **Bare-minimum & lightweight** — a single, small Kotlin + Jetpack Compose app. No bloat.
+- 🔒 **Private & safe** — everything stays on your device. No accounts, no servers, no tracking.
+- 🚫 **No ads, ever** — and nothing to buy.
+- 🆓 **Open source** — read the code, build it yourself, or contribute.
+
+## What it does
+
+Focuss blocks distracting apps during the focus schedules you define. When you open a
+blocked app during an active schedule, a full-screen wall takes over with a live countdown
+until the session ends — so the only easy thing to do is get back to what matters. Turning
+protection off mid-session means waiting out a short, per-schedule cooldown.
+
+That's the whole app. It does one thing and stays out of your way.
+
+## Features
+
+- **Focus schedules** — time window, days of the week, and the apps to block.
+- **Instant blocking** — every app launch is caught the moment it happens (no battery-draining polling).
+- **Live session timer** — see exactly how long is left in the current focus window.
+- **Cooldown to disable** — a deliberate pause before protection can be switched off, to stop impulsive quitting.
+- **Optional strict mode** — prevents uninstalling Focuss while a session is running.
+- **Material 3 design** — one accent colour, large tap targets, and a true-black dark mode for OLED.
+- **Multi-language** — available in several languages.
 
 ## Build & run
 
@@ -20,27 +40,27 @@ the user waits out a cooldown to disable protection).
 
 Output: `app/build/outputs/apk/debug/app-debug.apk`
 
-Requires: JDK 17+, Android SDK (compileSdk 35), minSdk 24. The `applicationId` is `com.focuss`
-— the same as the RN build — so this installs as a drop-in replacement.
+Requires JDK 17+, Android SDK (compileSdk 35), minSdk 24.
 
-## Required permissions
+## Permissions
 
-Three special permissions are requested during onboarding (all granted via system settings):
+Three special permissions are requested once during onboarding (all granted through system settings):
 
-| Permission            | Why                                             |
-|-----------------------|-------------------------------------------------|
-| Usage Stats           | Detect the foreground app                       |
-| Display over apps      | Show the block screen over restricted apps      |
-| Accessibility service | Event-driven detection of every app launch      |
+| Permission            | Why                                          |
+|-----------------------|----------------------------------------------|
+| Usage Stats           | Detect the foreground app                    |
+| Display over apps     | Show the block screen over restricted apps   |
+| Accessibility service | Event-driven detection of every app launch   |
 
-Everything stays on-device; nothing is sent anywhere.
+Focuss uses these solely to block apps you choose. Everything stays on-device; nothing is
+ever sent anywhere.
 
 ## Architecture
 
 ```
 com.focuss
 ├── FocussApp                     Application singleton (shares backend objects)
-├── data/                         ── core backend, no Android UI ──
+├── data/                         ── core logic, no Android UI ──
 │   ├── Models.kt                 Schedule, TimeSlot, InstalledApp
 │   ├── ScheduleLogic.kt          Pure scheduling math (active-now, overnight, formatting)
 │   ├── ScheduleStore.kt          Persistence: SharedPreferences + org.json
@@ -70,14 +90,11 @@ com.focuss
 4. The active block set is the union of `blockedApps` across every schedule that is
    "active now" (`ScheduleLogic.activeBlockedApps`), recomputed on every change.
 
-## What changed from the React Native version
+## Contributing
 
-- **No RN / Metro / Hermes** — single Kotlin codebase. APK dropped from ~81 MB to ~16 MB.
-- **No native bridge** — the old `FocussModule` is now plain `AppRepository` + a ViewModel.
-- **Storage** — AsyncStorage → SharedPreferences with a small hand-rolled JSON encoder.
-- **UI redesign** — cleaner, more minimal Material 3: one accent colour, larger tap targets,
-  bottom-anchored primary actions, an inverted "hero" live-session timer, and true-black
-  dark mode for OLED. The native `TimePickerDialog` replaces the JS date picker.
-- Same feature set: schedules (time window, days, blocked apps, per-schedule cooldown),
-  live session timer, session lock (no editing while a session runs), and theme toggle.
-```
+Issues and pull requests are welcome. Focuss aims to stay small and focused — please keep
+contributions in that spirit: minimal, private by default, and free of ads or tracking.
+
+## License
+
+Open source. See the repository for license details.

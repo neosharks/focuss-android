@@ -25,8 +25,7 @@ import com.focuss.service.UninstallProtectionAdmin
 /**
  * The bridge between the UI and the Android system: enumerating launchable apps,
  * checking/requesting the three required special permissions, and starting or
- * stopping the blocking service. This is the "backend" the React Native module
- * used to wrap — now plain Android with no bridge in between.
+ * stopping the blocking service.
  */
 class AppRepository(private val context: Context) {
 

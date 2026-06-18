@@ -105,6 +105,6 @@
     <string name="language_system">System default</string>
     <string name="overlap_error">This overlaps another schedule — adjust the time or days.</string>
     <string name="about">About</string>
-    <string name="open_source_footer">Focuss is open source and developed by Neosharks.</string>
+    <string name="open_source_footer">Focuss is free, open source, and ad-free — built by Neosharks.</string>
     <string name="view_on_github">View on GitHub</string>
 </resources>
