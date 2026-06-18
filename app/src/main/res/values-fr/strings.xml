@@ -95,4 +95,7 @@
     <string name="language">Langue</string>
     <string name="language_system">Par défaut du système</string>
     <string name="overlap_error">Chevauche un autre horaire — ajustez l\'heure ou les jours.</string>
+    <string name="about">À propos</string>
+    <string name="open_source_footer">Focuss est gratuit, open source et sans publicité — développé par Neosharks.</string>
+    <string name="view_on_github">Voir sur GitHub</string>
 </resources>

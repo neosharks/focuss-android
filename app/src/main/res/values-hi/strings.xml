@@ -95,4 +95,7 @@
     <string name="language">भाषा</string>
     <string name="language_system">सिस्टम डिफ़ॉल्ट</string>
     <string name="overlap_error">यह किसी अन्य शेड्यूल से ओवरलैप करता है — समय या दिन बदलें।</string>
+    <string name="about">परिचय</string>
+    <string name="open_source_footer">Focuss निःशुल्क, ओपन सोर्स और विज्ञापन-रहित है — Neosharks द्वारा निर्मित।</string>
+    <string name="view_on_github">GitHub पर देखें</string>
 </resources>

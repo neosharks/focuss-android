@@ -95,4 +95,7 @@
     <string name="language">语言</string>
     <string name="language_system">跟随系统</string>
     <string name="overlap_error">与另一个计划重叠 — 请调整时间或日期。</string>
+    <string name="about">关于</string>
+    <string name="open_source_footer">Focuss 免费、开源且无广告 — 由 Neosharks 开发。</string>
+    <string name="view_on_github">在 GitHub 上查看</string>
 </resources>

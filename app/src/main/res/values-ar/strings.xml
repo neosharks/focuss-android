@@ -95,4 +95,7 @@
     <string name="language">اللغة</string>
     <string name="language_system">إعداد النظام الافتراضي</string>
     <string name="overlap_error">يتداخل مع جدول آخر — عدّل الوقت أو الأيام.</string>
+    <string name="about">حول</string>
+    <string name="open_source_footer">‏Focuss تطبيق مجاني ومفتوح المصدر وخالٍ من الإعلانات — من تطوير Neosharks.</string>
+    <string name="view_on_github">عرض على GitHub</string>
 </resources>

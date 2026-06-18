@@ -95,4 +95,7 @@
     <string name="language">زبان</string>
     <string name="language_system">سسٹم ڈیفالٹ</string>
     <string name="overlap_error">یہ کسی دوسرے شیڈول سے ٹکراتا ہے — وقت یا دن تبدیل کریں۔</string>
+    <string name="about">تعارف</string>
+    <string name="open_source_footer">‏Focuss مفت، اوپن سورس اور اشتہارات سے پاک ہے — Neosharks کا تیار کردہ۔</string>
+    <string name="view_on_github">‏GitHub پر دیکھیں</string>
 </resources>
