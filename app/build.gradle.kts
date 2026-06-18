@@ -13,11 +13,11 @@ val keystoreProps = Properties().apply {
 }
 
 android {
-    namespace = "com.focuss"
+    namespace = "com.neosharks.focuss"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.focuss"
+        applicationId = "com.neosharks.focuss"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

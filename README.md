@@ -58,7 +58,7 @@ ever sent anywhere.
 ## Architecture
 
 ```
-com.focuss
+com.neosharks.focuss
 ├── FocussApp                     Application singleton (shares backend objects)
 ├── data/                         ── core logic, no Android UI ──
 │   ├── Models.kt                 Schedule, TimeSlot, InstalledApp
